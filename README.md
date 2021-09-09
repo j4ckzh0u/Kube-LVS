@@ -1,2 +1,2 @@
-# kube-lvs
-Kube-Lvs is a loadblance, use LVS
+# Kube-LVS
+Kube-LVS is a loadblance, using LVS
