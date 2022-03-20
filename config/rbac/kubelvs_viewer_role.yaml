@@ -1,0 +1,20 @@
+# permissions for end users to view kubelvs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kubelvs-viewer-role
+rules:
+- apiGroups:
+  - infra.kubelvs.io
+  resources:
+  - kubelvs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - infra.kubelvs.io
+  resources:
+  - kubelvs/status
+  verbs:
+  - get

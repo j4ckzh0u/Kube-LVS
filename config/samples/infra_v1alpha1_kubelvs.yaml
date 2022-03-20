@@ -1,0 +1,6 @@
+apiVersion: infra.kubelvs.io/v1alpha1
+kind: KubeLvs
+metadata:
+  name: kubelvs-sample
+spec:
+  # Add fields here

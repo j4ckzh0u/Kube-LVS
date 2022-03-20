@@ -1,0 +1,24 @@
+# permissions for end users to edit kubelvs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: kubelvs-editor-role
+rules:
+- apiGroups:
+  - infra.kubelvs.io
+  resources:
+  - kubelvs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - infra.kubelvs.io
+  resources:
+  - kubelvs/status
+  verbs:
+  - get
